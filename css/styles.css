@@ -214,12 +214,12 @@ body {
   height: 8px;
   text-indent: -9999px;
   border: 0;
-  background: url("../assets/icons/sliders/first slider/dot.svg") no-repeat;
+  background: url("../assets/icons/sliders/first_slider/dot.svg") no-repeat;
   background-size: cover;
   overflow: hidden;
 }
 .first-slider .dots ul .slick-active button {
-  background: url("../assets/icons/sliders/first slider/filled-dot.svg") no-repeat;
+  background: url("../assets/icons/sliders/first_slider/filled-dot.svg") no-repeat;
 }
 
 .calculation {
