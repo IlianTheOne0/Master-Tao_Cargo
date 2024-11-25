@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Master Tao Cargo</title>
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/styles.css">
+</head>
+<body class="body">
+	<div class="header">
+		<div class="container">
+			<div class="row d-flex justify-content-between align-items-center">
+				<img src="assets/icons/logo.svg" alt="Logo" class="col-4 header__logo">
+				
+				<img src="assets/icons/burger.svg" alt="burger" class="header__burger col-6">
+				<nav class="col-6 header__navigation regular">
+					<a href="#">Цены и сроки</a>
+					<a href="#">Услуги</a>
+					<a href="#">О компании</a>
+					<a href="#">Контакты</a>
+					<a href="#">Оформить груз</a>
+				</nav>
+			</div>
+		</div>
+	</div>
+
+	<section class="first-slider">
+		<div class="container">
+			<div class="slider">
+				<div class="item">
+					<img src="assets/images/slider/first/first.png" alt="First image in slider">
+					<div class="item__gradient"></div>
+
+					<div class="item__content">
+						<h1 class="bold">
+							Прямое карго<p class="line-break"></p>из Китая
+						</h1>
+
+						<p class="light">
+							Доставляем любые грузы из Китая
+						</p>
+						<p class="light">
+							по честной цене
+						</p>
+						
+						<a href="#calculation">
+							<button src="#caclculation">
+								<p class="semibold">
+									Рассчитать стоимость
+								</p>
+
+								<img src="assets/icons/buttons/button-arrow.svg" alt="arrow">
+							</button>
+						</a>
+					</div>
+				</div>
+
+				<div class="item">
+					<img src="assets/images/slider/first/second.png" alt="Second image in slider">
+					<div class="item__gradient"></div>
+
+					<div class="item__content">
+						<h1 class="bold">
+							Страховка груза
+						</h1>
+
+						<p class="light">
+							Если груз будет утерян или поврежден, мы вернем деньги	
+						</p>
+						
+						<a href="#calculation">
+							<button>
+								<p class="semibold">
+									Рассчитать стоимость
+								</p>
+
+								<img src="assets/icons/buttons/button-arrow.svg" alt="arrow">
+							</button>
+						</a>
+					</div>
+				</div>
+
+				<div class="item">
+					<img src="assets/images/slider/first/third.png" alt="Third image in slider">
+					<div class="item__gradient"></div>
+
+					<div class="item__content">
+						<h1 class="bold">
+							Выкуп товара с ТаоБао, 1688
+						</h1>
+
+						<p class="light">
+							Выкуп и доставка товаров с китайских торговых площадок.
+						</p>
+						
+						<a href="#calculation">
+							<button>
+								<p class="semibold">
+									Рассчитать стоимость
+								</p>
+
+								<img src="assets/icons/buttons/button-arrow.svg" alt="arrow">
+							</button>
+						</a>
+					</div>
+				</div>
+
+				<div class="item">
+					<img src="assets/images/slider/first/fourth.png" alt="Fourth image in slider">
+					<div class="item__gradient"></div>
+
+					<div class="item__content">
+						<h1 class="bold">
+							Экспресс авто доставка
+						</h1>
+						
+						<a href="#calculation">
+							<button style="margin-top: 90px;">
+								<p class="semibold">
+									Рассчитать стоимость
+								</p>
+
+								<img src="assets/icons/buttons/button-arrow.svg" alt="arrow">
+							</button>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="dots"></div>
+		</div>
+	</section>
+
+	<section class="calculation" id="calculation">
+		<div class="container">
+			<div class="row calculation__main">
+				<div class="col-8 window">
+					<h1 class="bold">
+						Получить рассчет стоимости доставки вашего груза
+						<img src="assets/icons/line/line.svg" alt="green line">
+					</h1>
+
+					<div class="row window__form">
+						<div class="row">
+							<div class="col-6">
+								<div class="item">
+									<p class="semibold">
+										Категория товара:
+									</p>
+
+									<input type="text" placeholder="Категория товара" class="regular">
+								</div>
+								<div class="item">
+									<p class="semibold">
+										Вес груза (кг):
+									</p>
+
+									<input type="number" placeholder="Введите вес" class="regular">
+								</div>
+
+								<div class="checkbox-item">
+									<label class="item">
+										<p class="semibold">
+											Страховка
+										</p>
+
+										<input type="checkbox" class="regular">
+										<span class="checkmark">
+											<img src="assets/icons/buttons/checked.svg" alt="checked">
+										</span>
+									</label>
+
+									<label class="item">
+										<p class="semibold">
+											Таможенное оформление
+										</p>
+
+										<input type="checkbox" checked="checked" class="regular">
+										<span class="checkmark">
+											<img src="assets/icons/buttons/checked.svg" alt="checked">
+										</span>
+									</label>
+								</div>
+							</div>
+
+							<div class="col-6">
+								<div class="item">
+									<p class="semibold">
+										Стоимость груза:
+									</p class="semibold">
+
+									<input type="number" placeholder="Введите стоимость" class="regular">
+								</div>
+								<div class="item">
+									<p class="semibold">
+										Объем груза (м3):
+									</p>
+
+									<input type="number" placeholder="Введите объем" class="regular">
+								</div>
+								<div class="item CNoFEA">
+									<p class="semibold">
+										Код ТН ВЭД:
+									</p>
+
+									<input type="text" placeholder="Введите код" class="regular">
+								</div>
+							</div>
+						</div>
+
+						 <div class="row">
+							<label for="file-input" class="file-item">
+								<p>фотография.jpeg</p>
+								<input id="file-input" type="file">
+
+								<div class="file-placeholder">
+									<p>Загрузить фото товара</p>
+								</div>
+							</label>
+						</div>
+
+						<div class="row">
+							<button class="next-step">
+								<p>
+									Следующий шаг
+								</p>
+
+								<img src="assets/icons/buttons/button-arrow.svg" alt="Arrow">
+							</button>
+						</div>
+					</div>
+				</div>
+
+				<img src="assets/images/calc__man.png" alt="Man" class="col-4 calculation__main__man">
+				<img src="assets/images/calc__logo.svg" alt="Logo" class="calculation__main__logo">
+			</div>
+		</div>
+	</section>
+
+	<script src="./js/jQuery-v3.6.0.js"></script>
+	<script src="./js/slick.min.js"></script>
+	<script src="./js/bootstrap.bundle.min.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
+	<script src="./js/main.js"></script>
+</body>
+</html>

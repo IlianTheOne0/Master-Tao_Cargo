@@ -1,0 +1,83 @@
+// ============= COLORS =============
+$background-color: #282B38;
+$background-color-2: #363A4D;
+
+$text-color: #ffffff;
+$second-text-color: #E58D35;
+
+$button-color: #E58D35;
+$button-hover-color: #ffffff;
+
+$input-color: #ffffff;
+$placeholder-text-color: #CBCBCB;
+$input-border-color: #282B38;
+$file_input-border-color: #ffffff;
+
+// ============= MAIN =============
+@import 'fonts.css';
+
+* {
+	margin: 0;
+	padding: 0;
+	
+	box-sizing: border-box;
+}
+
+body {
+	display: grid;
+
+	font-family: "Proxima Nova", sans-serif;
+
+	color: $text-color;
+	background-color: $background-color;
+	
+	overflow-x: hidden;
+}
+
+.container {
+	margin: 0 auto;
+	padding: 0;
+}
+
+.regular {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 146%;
+}
+
+// ============= HEADER =============
+.header {
+	width: 100vw;
+	height: 48.35px;
+
+	margin: 0;
+	padding: 1.37% 0 1.4% 10.157%;
+
+	* {
+		margin: 0;
+		padding: 0;
+	}
+
+	& img {
+		max-width: 172px;
+		max-height: 48.35px;
+	}
+}
+
+.header__navigation {
+	width: calc(100% - 172px - 97px);
+	
+	margin-left: 4.899%;
+	margin-top: 0.303%;
+
+	& a {
+		text-decoration: none;
+		letter-spacing: 1px;
+
+		color: $text-color;
+
+		&:not(:last-child) {
+			margin-right: 7.5%;
+		}
+	}
+}
