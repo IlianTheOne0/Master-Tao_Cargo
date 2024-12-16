@@ -120,7 +120,7 @@ header, section {
   border: none;
 }
 .navbar-toggler-icon {
-  background-image: url("/assets/icons/burger.svg");
+  background-image: url("https://iliantheone0.github.io/Master-Tao_Cargo/assets/icons/burger.svg");
 }
 .navbar-nav {
   display: flex;
