@@ -1,0 +1,431 @@
+@import '../../styles.scss';
+
+.services {
+	min-height: 607px;
+
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	
+	margin-top: 90px;
+
+    z-index: 800;
+}
+
+.services-base {
+	max-width: 1820px;
+	height: 794px;
+
+	position: relative;
+
+	padding: 90px 0;
+
+	border-radius: 20px;
+	box-shadow: 0px 12px 36px rgba(0, 0, 0, 0.25);
+
+	background-color: $background-color-2;
+
+    &__title {
+		width: 1140px;
+		
+		margin-left: 340px;
+
+		font-size: 36px;
+		line-height: 124.5%;
+		letter-spacing: 0;
+		text-align: center;
+		text-transform: uppercase;
+
+		& img {
+			margin-top: 19px;
+
+			display: block;
+			justify-self: center;
+		}
+	}
+
+	&__blocker-first-first,
+	&__blocker-first-second,
+	&__blocker-second-first,
+	&__blocker-second-second
+	{
+		height: 90%;
+
+		position: absolute;
+		top: 5%;
+
+		z-index: 800;
+	}
+
+	&__blocker-first {
+		&-first,
+		&-second
+		{
+			width: 17.1%;
+			background-color: $background-color-2;
+		}
+
+		&-first {
+			left: 0;
+		}
+	
+		&-second {
+			right: 0;
+		}
+	}
+
+	&__blocker-second {
+		&-first,
+		&-second
+		{
+			width: 5%;
+
+			background-color: $background-color;
+		}
+
+		&-first {
+			left: -5%;
+		}
+	
+		&-second {
+			right: -5%;
+		}
+	}
+
+	& .dots {
+		display: none;
+	}
+
+	& .slider {
+		width: 1140px;
+
+		justify-self: center;
+
+		& .slick-slide.out-of-view {
+			opacity: 0;
+			pointer-events: none;
+			transition: opacity 0.3s ease-in-out;
+		}
+
+		& .slick-services-prev, .slick-services-next {
+			position: absolute;
+			top: calc(50% - (41.36px / 2));
+			
+			border: 0;
+			background-color: transparent;
+
+			z-index: 850;
+	
+			& img {
+				width: 22.14px;
+				height: 41.36px;
+			}
+		}
+
+		& .slick-services-prev {
+			left: -10%;
+		}
+	
+		& .slick-services-next {
+			right: -10%;
+		}
+	}
+
+	& .item {
+		min-width: 360px;
+		height: 482px;
+
+		position: relative;
+		
+		margin-top: 48px;
+		padding: 250px 17px 33px 30px;
+		border-radius: 20px;
+		box-shadow: 0px 12px 36px rgba(0, 0, 0, 0.25);
+	
+		&:not(:last-child) {
+			margin-right: 30px;
+		}
+
+		&__background-image {
+			width: 360px;
+			height: 482px;
+	
+			position: absolute;
+			top: 0;
+			left: 0;
+	
+			border-radius: 20px;
+		}
+
+		&__services-gradient {
+			width: 100%;
+			height: 100%;
+		
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			
+			border-radius: 20px;
+		
+			background: linear-gradient(0deg, $linear_gradient-first-background-color 0%, $linear_gradient-second-background-color 90%);
+			z-index: 850;
+		}
+
+		&__service-content {
+			width: 307px;
+			height: calc(100% / 2);
+
+			position: absolute;
+		
+			z-index: 850;
+		}
+
+		&__title {
+			font-size: 22px;
+			line-height: 124.5%;
+			letter-spacing: 0;
+		}
+
+		&__p {
+			font-size: 15px;
+			line-height: 124.5%;
+			letter-spacing: 0;
+		}
+
+		& .description {
+			width: 153px;
+			height: 50px;
+	
+			border: 2px solid $button-color;
+			border-radius: 90px;
+			
+			font-size: 15px;
+			line-height: 146%;
+			letter-spacing: 0;
+
+			color: $text-color;
+			background-color: rgba(0, 0, 0, 0);
+	
+			transition: all 0.3s ease;
+			
+			&:hover {
+				color: $text-color;
+				background-color: $button-color;
+			}
+		}
+	}
+}
+
+/* 1440-1919 */
+@media screen and (max-width: 1919px) {
+	.services-base {
+		&__blocker-first-first,
+		&__blocker-first-second
+		{
+			width: 6%;
+		}
+
+		&__title {
+			width: 100%;
+
+			margin: 0;
+		}
+
+		& .slider {
+			& .slick-services-prev {
+				left: -5%;
+			}
+		
+			& .slick-services-next {
+				right: -6%;
+			}
+		}
+	}
+}
+
+/* 1024-1439 */
+@media screen and (max-width: 1439px) {
+	.services-base {
+		&__blocker-first-first,
+		&__blocker-first-second
+		{
+			width: 7%;
+		}
+
+		&__blocker-second-first,
+		&__blocker-second-second
+		{
+			width: 10%;
+			height: 120%;
+			
+			top: -10%;
+		}
+
+		&__blocker-second-first {
+			left: -10%;
+		}
+
+		&__blocker-second-second {
+			right: -10%;
+		}
+
+		& .slider {
+			margin-left: 385px;
+
+			& .slick-services-prev {
+				left: -6%;
+			}
+
+			& .slick-services-next {
+				right: 27.5%;
+			}
+		}
+	}
+}
+
+/* 768-1023 */
+@media screen and (max-width: 1023px) {
+	.services-base {
+		border-radius: 0;
+
+		&__blocker-second-first,
+		&__blocker-second-second
+		{
+			display: none;
+		}
+
+		& .dots {
+			width: 100%;
+	
+			margin-top: 35px;
+	
+			display: flex;
+			justify-content: center;
+
+			& .slick-dots {
+				margin: 0;
+				padding: 0;
+			}
+	
+			& ul {
+				list-style: none;
+	
+				& li {
+					display: inline-block;
+	
+					&:not(:last-child) {
+						margin-right: 26px;
+					}
+	
+					& button {
+						width: 8px;
+						height: 8px;
+						
+						text-indent: -9999px;
+						
+						border: 0;
+			
+						background: url('/assets/icons/sliders/dot.svg') no-repeat center center;
+						background-size: 8px 8px;
+					}
+				}
+		
+				& .slick-active button {
+					background: url('/assets/icons/sliders/filled-dot.svg') no-repeat center center;
+				}
+			}
+		}
+
+		& .slider {
+			margin-left: 800px;
+
+			& .slick-services-prev {
+				left: -10%;
+			}
+
+			& .slick-services-next {
+				right: 60%;
+			}
+		}
+		
+		& .item {
+			margin-right: 250px !important;
+		}
+	}
+}
+
+/* 425-767 */
+@media screen and (max-width: 767px) {
+	.services {
+		overflow: hidden;
+	}
+	.services-base {
+		&__blocker-first-first,
+		&__blocker-first-second
+		{
+			display: none;
+		}
+
+		&__blocker-second-first,
+		&__blocker-second-second
+		{
+			width: 10%;
+			height: 120%;
+			
+			top: -10%;
+		}
+
+		& .slider {
+			& .slick-services-prev {
+				left: -100%;
+			}
+
+			& .slick-services-next {
+				right: -100%;
+			}
+		}
+
+		& .item {
+			box-shadow: none;
+
+			&__title {
+				width: 425px;
+			}
+		}
+	}
+}
+
+/* 375-424 */
+@media screen and (max-width: 424px) {
+    .services-base {
+		.slider {
+			margin-left: 785px;
+		}
+	}
+}
+
+/* 320< */
+@media screen and (max-width: 374px) {
+    .services-base {
+		& .slider {
+			margin-left: 842.5px;
+		}
+
+		& .item {
+			width: 300px;
+
+			&__background-image,
+			&__services-gradient,
+			&__service-content
+			{
+				width: 300px;
+			}
+
+			&__title,
+			&__p
+			{
+				width: 270px;
+			}
+		}
+	}
+}

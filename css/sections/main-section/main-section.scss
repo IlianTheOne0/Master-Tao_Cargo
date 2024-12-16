@@ -1,0 +1,340 @@
+@import '../../styles.scss';
+
+.main-section {
+    position: relative;
+
+    margin-top: 14px; /*39.65px*/
+    
+    overflow-x: hidden;
+
+    & .dots {
+        width: 100%;
+
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        display: flex;
+        justify-content: center;
+        
+        & .slick-dots {
+            margin: 0;
+            padding: 0;
+        }
+
+        & ul {
+            list-style: none;
+
+            & li {
+                display: inline-block;
+
+                &:not(:last-child) {
+                    margin-right: 26px;
+                }
+
+                & button {
+                    width: 8px;
+                    height: 8px;
+                    
+
+                    text-indent: -9999px;
+                    
+                    border: 0;
+        
+                    background: url('/assets/icons/sliders/dot.svg') no-repeat center center;
+                    background-size: 8px 8px;
+                }
+            }
+    
+            & .slick-active button {
+                background: url('/assets/icons/sliders/filled-dot.svg') no-repeat center center;
+            }
+        }
+    }
+}
+
+.slider {
+    position: relative;
+
+    & .slick {
+        &-prev,
+        &-next {
+            position: absolute;
+            top: calc(50% - (41.36px / 2));
+
+            border: 0;
+            background-color: transparent;
+
+            z-index: 850;
+
+            & img {
+                width: 22.14px;
+                height: 41.36px;
+            }
+        }
+
+        &-prev {
+            left: calc(5% - (22.14px / 2));
+        }
+
+        &-next {
+            right: calc(5% - (22.14px / 2));
+        }
+    }
+}
+
+.item {
+    position: relative;
+    display: inline-block;
+
+    &:not(:last-child) {
+        margin-right: 50px;
+    }
+
+    &__background {
+        width: 100%;
+        max-width: 1820px;
+        
+        border-radius: 20px;
+    }
+
+    &__gradient {
+        width: 65%;
+        height: 100%;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        
+        border-radius: 20px;
+
+        background: linear-gradient(103deg, $linear_gradient-first-background-color 0%, $linear_gradient-second-background-color 90%);
+        z-index: 850;
+    }
+
+    &__content {
+        position: absolute;
+        top: 20%;
+        left: 20%;
+
+        z-index: 850;
+
+        & h1 {
+            width: 463px;
+
+            font-size: 56px;
+            line-height: 126%;
+            letter-spacing: 0;
+            text-transform: uppercase;
+
+            margin: 0;
+            margin-bottom: 8px;
+        }
+
+        & p {
+            width: 321px;
+
+            font-size: 20px;
+            line-height: 135.5%;
+            letter-spacing: 0;
+
+            margin: 0;
+            margin-bottom: 37px;
+        }
+
+        & button {
+            width: 293px;
+            height: 68px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            border: 2px solid $button-color;
+            border-radius: 90px;
+
+            color: $text-color;
+            background-color: $button-color;
+
+            transition: all 0.3s ease;
+
+            &:hover {
+                color: $second-text-color;
+                background-color: $button-hover-color;
+            }
+
+            & p {
+                margin: 0;
+                
+                font-size: 16px;
+                line-height: 146%;
+                letter-spacing: 0;
+            }
+
+            & img {
+                margin-right: 15px;
+            }
+        }
+
+        & a {
+            text-decoration: none;
+        }
+    }
+}
+
+/* 1440-1919 */
+@media screen and (max-width: 1919px) {
+    .item {
+        &:not(:last-child) {
+            margin-right: 75px;
+        }
+
+        &__background {
+            max-width: 1340px;
+        }
+
+        &__content {
+            top: 10%;
+            left: 125px;
+        }
+    }
+}
+
+/* 1024-1439 */
+@media screen and (max-width: 1439px) {
+    .item {
+        &__background {
+            max-width: 924px;
+            height: 400px;
+        }
+
+        &__gradient {
+            width: 100%;
+        }
+
+        &__content {
+            top: 7.5%;
+
+            & h1 {
+                font-size: 40px;
+            }
+
+            & p {
+                font-size: 16px;
+                width: 100%;
+            }
+
+            & button {
+                width: 253px;
+                height: 63px;
+
+                & p {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+/* 768-1023 */
+@media screen and (max-width: 1023px) {
+    .item {
+        &__background {
+            max-width: 768px;
+
+            border-radius: 0;
+        }
+
+        &__gradient {
+            border-radius: 0;
+        }
+    }
+}
+
+/* 425-767 */
+@media screen and (max-width: 767px) {
+    .item {
+        &__background {
+            max-width: 1820px;
+            height: 580px;
+            margin-left: -450px; 
+        }
+
+        &__gradient {
+            min-width: 1820px;
+            height: 580px;
+
+            margin-left: -450px;
+        }
+
+        &__content {
+            top: 25%;
+            left: 3%;
+
+            text-align: center;
+
+            & h1,
+            & p,
+            & button
+            {
+                width: 350px;
+            }
+
+            & h1 {
+                font-size: 32px;
+            }
+
+            & p {
+                font-size: 16px;
+            }
+
+            & button {
+                height: 68px;
+
+                & p {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+/* 375-424 */
+@media screen and (max-width: 424px) {
+    .item__content {
+        left: 2%;
+
+        & h1,
+        & p,
+        & button
+        {
+            width: 335px;
+        }
+    }
+}
+
+/* 320< */
+@media screen and (max-width: 374px) {
+    .item__content {
+        left: 1%;
+
+        & h1,
+        & p,
+        & button
+        {
+            width: 295px;
+        }
+
+        & h1 {
+            font-size: 24px;
+        }
+
+        & button {
+            height: 58px;
+
+            & p {
+                font-size: 14px;
+            }
+        }
+    }
+}

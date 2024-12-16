@@ -1,0 +1,235 @@
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../assets/fonts/Proxima Nova/Bold.ttf") format("openttype");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../assets/fonts/Proxima Nova/Semibold.ttf") format("opentype");
+  font-weight: 550;
+}
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../assets/fonts/Proxima Nova/Regular.ttf") format("opentype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../assets/fonts/Proxima Nova/Light.ttf") format("opentype");
+  font-weight: 300;
+}
+.bold {
+  font-weight: 600;
+}
+
+.semibold {
+  font-weight: 550;
+}
+
+.regular {
+  font-weight: 400;
+}
+
+.light {
+  font-weight: 300;
+}
+
+body {
+  display: grid;
+  font-family: "Proxima Nova", sans-serif;
+  color: #ffffff;
+  background-color: #282B38;
+  overflow-x: hidden;
+}
+
+header, section {
+  width: 100vw;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* 1920> */
+@media screen and (min-width: 1920px) {
+  .container {
+    max-width: 1820px;
+  }
+}
+/* 1440-1919 */
+@media screen and (max-width: 1919px) {
+  .container {
+    max-width: 1340px;
+  }
+}
+/* 1024-1439 */
+@media screen and (max-width: 1439px) {
+  .container {
+    max-width: 924px;
+  }
+}
+/* 768-1023 */
+@media screen and (max-width: 1023px) {
+  .container {
+    max-width: 768px;
+  }
+}
+/* 425-767 */
+@media screen and (max-width: 767px) {
+  .container {
+    max-width: 425px;
+  }
+}
+/* 375-424 */
+@media screen and (max-width: 424px) {
+  .container {
+    max-width: 375px;
+  }
+}
+/* 320< */
+@media screen and (max-width: 374px) {
+  .container {
+    max-width: 320px;
+  }
+}
+.header {
+  height: 48.35px;
+  margin: 26px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  z-index: 1000;
+}
+.header * {
+  margin: 0;
+  padding: 0;
+}
+.header__logo {
+  width: 172px;
+  height: 48.35px;
+  margin-right: 75px;
+}
+
+.navbar {
+  overflow: hidden;
+}
+.navbar-toggler {
+  border: none;
+}
+.navbar-toggler-icon {
+  background-image: url("/assets/icons/burger.svg");
+}
+.navbar-nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+.nav-item a {
+  font-size: 16px;
+  line-height: 146%;
+  letter-spacing: 0;
+}
+.nav-item a:hover {
+  color: #E58D35;
+}
+.nav-item:not(:last-child) {
+  margin-right: 75px;
+}
+.nav-item button {
+  width: 153px;
+  height: 50px;
+  border: 2px solid #E58D35;
+  border-radius: 90px;
+  color: #ffffff;
+  background-color: #E58D35;
+  transition: all 0.3s ease;
+}
+.nav-item button:hover {
+  color: #E58D35;
+  background-color: #ffffff;
+}
+
+@media screen and (max-width: 1439px) {
+  .header__logo {
+    margin-right: 35px;
+  }
+  .nav-item:not(:last-child) {
+    margin-right: 5px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .header {
+    justify-content: space-around;
+  }
+  .navbar {
+    width: 100%;
+    position: absolute;
+    top: 26px;
+    padding: 0 50px;
+  }
+  .navbar-nav {
+    box-shadow: 0px 50px 50px rgba(0, 0, 0, 0.25);
+    background-color: #363A4D;
+  }
+  .navbar-collapse {
+    width: 100%;
+    margin-top: 15px;
+  }
+  .nav-item {
+    padding: 0 102px;
+  }
+  .nav-item:first-child {
+    padding-top: 37px;
+  }
+  .nav-item:last-child {
+    padding-bottom: 60px;
+  }
+  .nav-item:not(:first-child) {
+    margin-top: 25px;
+  }
+  .nav-item:not(:last-child) {
+    margin-right: 0;
+  }
+  .nav-item a {
+    width: 171px;
+    font-size: 24px;
+    line-height: 222%;
+    letter-spacing: 0;
+    text-align: center;
+  }
+  .nav-item button {
+    font-size: 16px;
+    line-height: 146%;
+    letter-spacing: 0;
+    width: 295px;
+    height: 68px;
+  }
+  .bigger {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .bigger .nav-link {
+    width: 500px !important;
+  }
+}
+@media screen and (max-width: 767px) {
+  .header__logo {
+    width: 126px;
+    height: 35.42px;
+    margin-left: 19px;
+  }
+  .navbar-toggler {
+    margin-right: 19px;
+  }
+  .navbar {
+    top: 18px;
+    padding: 0;
+  }
+}/*# sourceMappingURL=header.css.map */

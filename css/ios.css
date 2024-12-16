@@ -1,0 +1,108 @@
+/* HERE ARE THE PROPERTIES FOR APPLE PRODUCTS */
+@media screen and (max-width: 767px) {
+	/* CALCULATION */
+	.calculation__title {
+		display: -webkit-flex;
+		-webkit-flex-direction: column;
+	}
+
+	.calculation__title img {
+		-webkit-align-self: center;
+	}
+	
+	.custom-form {
+		display: -webkit-flex;
+		-webkit-flex-direction: column;
+		-webkit-align-self: center;
+	}
+
+	/* ADVANTAGES */
+	.advantages-base__title {
+		display: -webkit-flex;
+		-webkit-flex-direction: column;
+	}
+
+	.advantages-base__title img {
+		-webkit-align-self: center;
+	}
+
+	.advantages-base .dots ul li:not(:last-child) {
+		margin-right: 15px;
+	}
+
+	/* DELIVERY */
+	.delivery__title {
+		display: -webkit-flex;
+		-webkit-flex-direction: column;
+	}
+
+	.delivery__title img {
+		-webkit-align-self: center;
+	}
+
+	.delivery .slider {
+		width: 425px;
+	}
+
+	/* SERVICES */
+    .services-base__title {
+        display: flex;
+        flex-direction: column;
+        -webkit-flex-direction: column;
+    }
+
+    .services-base__title img {
+        align-self: center;
+        -webkit-align-self: center;
+    }
+
+	.services-base .slider {
+		width: 425px;
+
+		margin-left: 0;
+		padding-left: 30px;
+	}
+
+	/* ABOUT */
+	.about-base__title {
+		width: 425px;
+
+		display: -webkit-flex;
+		-webkit-flex-direction: column;
+	}
+
+	.about-base__title img {
+		-webkit-align-self: center;
+	}
+
+	.about-base__p {
+		padding: 0 12px;
+	}
+
+	/* FAQ */
+    .faq-base__title {
+        display: -webkit-flex;
+        -webkit-flex-direction: column;
+    }
+
+    .faq-base__title img {
+        -webkit-align-self: center;
+    }
+
+	.faq__base {
+		margin-left: 0px;
+	}
+
+	.accordion-button {
+		padding-right: 50px !important;
+	}
+
+	.accordion-body {
+		padding-right: 34px !important;
+	}
+
+	/* COOPERATION */
+    .cooperation-base__block {
+		margin-left: 3.5px;
+    }
+}

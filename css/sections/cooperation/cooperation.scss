@@ -1,0 +1,227 @@
+@import '../../styles.scss';
+
+.cooperation {
+    position: relative;
+
+    margin-top: 90px;
+
+    z-index: 800;
+}
+
+.cooperation-base {
+    width: 100%;
+
+    padding: 96px 250px;
+
+    border-radius: 20px;
+    box-shadow: 0px 12px 36px rgba(0, 0, 0, 0.25);
+
+    background-color: $background-color-2;
+
+    &__title {
+        margin-bottom: 5px;
+
+        font-size: 36px;
+        line-height: 124.5%;
+        letter-spacing: 0;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    &__description {
+        display: flex;
+        flex-direction: column;
+
+        font-size: 24px;
+        line-height: 124.5%;
+        letter-spacing: 0;
+        text-align: center;
+
+        img {
+            width: 85px;
+            height: 2px;
+            
+            display: block;
+            align-self: center;
+
+            margin-top: 19px;
+            margin-bottom: 85.08px;
+        }
+    }
+
+    &__block {
+        width: 1140px;
+
+        justify-content: space-around;
+        justify-self: center;
+
+        &:nth-child(2) {
+            margin-bottom: 93.25px;
+        }
+    }
+
+    &__list {
+        width: 528px;
+        
+        text-decoration: none;
+        list-style: none;
+
+        li {
+            font-size: 17px;
+            line-height: 156.5%;
+            letter-spacing: 0;
+
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+
+            &::before {
+                content: '•';
+            }
+        }
+    }
+
+    &__last-li {
+        margin-top: 57px;
+
+        &::before {
+            display: none;
+        }
+    }
+
+    &__image {
+        width: 555px;
+        height: 406px;
+        
+        margin: 0;
+        padding: 0;
+        
+        border-radius: 20px;
+    }
+
+    &__button {
+        width: 243px;
+        height: 68px;
+        
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        padding-left: 33px;
+        
+        border: 2px solid $button-color;
+        border-radius: 90px;
+        
+        color: $text-color;
+        background-color: $button-color;
+        
+        transition: all 0.3s ease;
+
+        &:hover {
+            color: $second-text-color;
+            background-color: $button-hover-color;
+        }
+
+        & img {
+            margin-right: 15px;
+        }
+    }
+}
+
+/* 1024-1439 */
+@media screen and (max-width: 1439px) {
+    .cooperation-base {
+        width: 924px;
+        
+        padding-left: 25px;
+        padding-right: 25px;
+
+        padding-bottom: 40px;
+
+        &__block {
+            width: 100%;
+            justify-content: unset;
+
+            & .col-6 {
+                width: 47.5%;
+
+                &:last-child {
+                    margin-left: 5%;
+                }
+            }
+        }
+    }
+}
+
+/* 768-1023 */
+@media screen and (max-width: 1023px) {
+    .cooperation-base {
+        width: 768px;
+
+        border-radius: 0;
+
+        &__description {
+            height: 70px;
+        }
+
+        &__block {        
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            & .col-6 {
+                width: 100%;
+            }
+
+            &__list {
+                margin: 0;
+            }
+         
+            &:nth-child(2) {
+                margin-bottom: 40px;
+            }
+
+            :last-child {
+                margin-left: 0 !important;
+            }
+        }
+
+        & .first,
+        & .second {
+            margin-bottom: 30px;
+        }
+
+        & .first{
+            margin-left: 0 !important;
+
+            order: -1;
+        }
+
+        &__image {
+            width: 90% !important;
+            height: auto;
+        }
+
+        &__last-li {
+            margin-top: 0 !important;
+        }
+    }
+}
+
+/* 425-767 */
+@media screen and (max-width: 767px) {
+    .cooperation-base {
+        width: 100%;
+
+        margin-left: 0;
+    }
+}
+
+/* 375-424 */
+@media screen and (max-width: 424px) {
+    .cooperation-base {
+        &__title {
+            font-size: 24px;
+        }
+    }
+}

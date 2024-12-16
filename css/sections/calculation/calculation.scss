@@ -1,0 +1,416 @@
+@import '../../styles.scss';
+
+.calculation {
+	height: 918px;
+
+    margin-top: 97px;
+
+    & .container {
+        position: relative;
+    }
+
+    &__title {
+        width: 613px;
+    
+        margin-left: 18.75%;
+        
+        font-size: 36px;
+        line-height: 124.5%;
+        letter-spacing: 0;
+        text-transform: uppercase;
+    
+        & img {
+            width: 85px;
+            height: 2px;
+    
+            margin-left: 15px;
+        }
+    }
+
+    &__man {
+        width: 560px;
+        height: 888px;
+    
+        position: absolute;
+        top: 5%;
+        right: 17.7%;
+    }
+
+    &__logo {
+        width: 28.49px;
+        height: 33.04px;
+    
+        position: absolute;
+		top: 9%;
+		right: 31%;
+    }
+}
+
+.custom-form {
+    width: 626px;
+    height: 597px;
+
+    display: inline-block;
+
+    margin-top: 50px;
+    margin-left: 340px !important;
+    padding: 48px 50px;
+
+    border-radius: 20px;
+    box-shadow: 0px 50px 50px rgba(0, 0, 0, 0.25);
+
+    background-color: $background-color-2;
+
+    & .semibold {
+        margin-bottom: 6px;
+
+        font-size: 15px;
+        line-height: 126%;
+        letter-spacing: 0;
+    }
+
+    & .regular {
+        font-size: 15px;
+        line-height: 126%;
+        letter-spacing: 0;
+
+        &::placeholder {
+            color: $text-color-3;
+        }
+    }
+
+    & .form {
+        &-group:not(:first-child) {
+            margin-top: 16px;
+        }
+
+        &-control {
+            width: 248px;
+            height: 56px;
+        }
+    }
+    
+    & input {
+        width: 100%;
+        height: 81px;
+    }
+
+    & .checkbox-item {
+        margin-top: 39px;
+
+        .item {
+            height: 24px;
+
+            position: relative;
+            display: flex;
+            align-items: center;
+            white-space: nowrap;
+
+            cursor: pointer;
+
+            &:not(:last-child) {
+                margin-bottom: 14px;
+            }
+
+            & input {
+                display: none;
+
+                &:checked ~ .checkmark img {
+                    position: absolute;
+                    left: 5px;
+                    top: 5px;
+
+                    display: block;
+                }
+            }
+
+            & .checkmark {
+                position: absolute;
+
+                width: 24px;
+                height: 24px;
+
+                border: 1px solid $background-color;
+                border-radius: 4px;
+
+                background-color: $WHITE;
+
+                & img {
+                    display: none;
+                }
+            }
+
+            & p {
+                position: absolute;
+                left: 33.2px;
+                top: 4px;
+
+                font-size: 15px;
+                line-height: 126%;
+            }
+        }
+    }
+
+    & button {
+        width: 253px;
+        height: 68px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        border: 2px solid $button-color;
+        border-radius: 90px;
+
+        color: $text-color;
+        background-color: $button-color;
+
+        transition: all 0.3s ease;
+
+        &:hover {
+            color: $second-text-color;
+            background-color: $button-hover-color;
+        }
+
+        & img {
+            margin-right: 15px;
+        }
+    }
+}
+
+.file-item {
+    margin-top: 35px;
+    margin-bottom: 26px;
+
+    & input {
+        display: none;
+    }
+
+    & p {
+        font-size: 15px;
+        line-height: 126%;
+    }
+
+    & .file-placeholder {
+        width: 526px;
+        height: 43px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        border: 1px dashed rgba(255, 255, 255, 0.26);
+        border-radius: 10px;
+
+        & p {
+            margin-top: 15px;
+        }
+    }
+}
+
+.submit-text {
+    width: 57%;
+    height: 22.5%;
+
+    margin: 0;
+    
+    font-size: 16px;
+    line-height: 146%;
+    letter-spacing: 0;
+    text-align: center;
+}
+
+/* 1440-1919 */
+@media screen and (max-width: 1919px) {
+    
+    .calculation {
+        height: 799px;
+
+        &__title {
+            margin-left: 125px;
+        }
+
+        &__man {
+            width: 500px;
+            height: 800px;
+
+            top: 0%;
+            right: 7.5%;
+        }
+
+        &__logo {
+            width: 28.49px;
+            height: 33.04px;
+            
+            top: 4%;
+            right: 23.5%;
+        }
+    }
+
+    .custom-form {
+        margin-left: 125px !important;
+    }
+}
+
+/* 1024-1439 */
+@media screen and (max-width: 1439px) {
+    .calculation {
+        &__title {    
+            margin-left: 50px;
+        }
+
+        &__man {
+            width: 300px;
+            height: 500px;
+
+            top: 40%;
+            right: 1%;
+        }
+
+        &__logo {
+            width: 20.49px;
+            height: 25.04px;
+
+            top: 42%;
+            right: 14.5%;
+        }
+    }
+
+    .custom-form {
+        margin-left: 50px !important;
+    }
+}
+
+/* 768-1023 */
+@media screen and (max-width: 1023px) {
+    .calculation {        
+        &__title {
+            width: 100%;
+            margin-left: 0;
+            text-align: center;
+        }
+        
+        &__man,
+        &__logo
+        {
+            display: none;
+        }
+    }
+
+    .custom-form {
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        margin-left: 0 !important;
+    }
+}
+
+/* 425-767 */
+@media screen and (max-width: 767px) {
+    .calculation {
+        height: 1096px;
+
+        overflow: hidden;
+        
+        & .container {
+            height: 1006px;
+        
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__title {
+            width: 335px;
+            font-size: 24px;
+
+            align-self: center;
+
+            img {
+                display: block;
+                justify-self: center;
+
+                margin-left: 0;
+                margin-top: 19px;
+            }
+        }
+    }
+
+    .custom-form {
+        width: 335px;
+        height: 100%;
+
+        padding: 52px 30px 34px;
+
+        & .col-6 {
+            width: 100%;
+
+            display: flex;
+            flex-direction: column;
+
+            &:last-child {
+                margin-top: 16px;
+            }
+        }
+        
+        & .form-control {
+            width: 100%;
+        }
+
+        .checkbox-item,
+        .code,
+        .file-item,
+        button
+        {
+            position: absolute;
+        }
+
+        .checkbox-item {
+            top: 591px;
+        }
+
+        .code,
+        .file-item .file-placeholder,
+        button
+        {
+            width: 275px;
+        }
+
+        .code {
+            top: 686px;
+        }
+
+        & .file-item {
+            top: 765px;
+        }
+
+        & button {
+            top: 904px;
+        }
+    }
+}
+
+/* 768-1023 */
+@media screen and (max-width: 1023px) {
+    .calculation__title {
+        font-size: 24px;
+    }
+}
+
+
+/* 320< */
+@media screen and (max-width: 374px) {
+    .custom-form {
+        width: 275px;
+
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .code,
+    .file-item .file-placeholder,
+    .custom-form button
+    {
+        width: 245px !important;
+    }
+}

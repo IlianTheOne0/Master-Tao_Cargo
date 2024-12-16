@@ -1,0 +1,229 @@
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../assets/fonts/Proxima Nova/Bold.ttf") format("openttype");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../assets/fonts/Proxima Nova/Semibold.ttf") format("opentype");
+  font-weight: 550;
+}
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../assets/fonts/Proxima Nova/Regular.ttf") format("opentype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../assets/fonts/Proxima Nova/Light.ttf") format("opentype");
+  font-weight: 300;
+}
+.bold {
+  font-weight: 600;
+}
+
+.semibold {
+  font-weight: 550;
+}
+
+.regular {
+  font-weight: 400;
+}
+
+.light {
+  font-weight: 300;
+}
+
+body {
+  display: grid;
+  font-family: "Proxima Nova", sans-serif;
+  color: #ffffff;
+  background-color: #282B38;
+  overflow-x: hidden;
+}
+
+header, section {
+  width: 100vw;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* 1920> */
+@media screen and (min-width: 1920px) {
+  .container {
+    max-width: 1820px;
+  }
+}
+/* 1440-1919 */
+@media screen and (max-width: 1919px) {
+  .container {
+    max-width: 1340px;
+  }
+}
+/* 1024-1439 */
+@media screen and (max-width: 1439px) {
+  .container {
+    max-width: 924px;
+  }
+}
+/* 768-1023 */
+@media screen and (max-width: 1023px) {
+  .container {
+    max-width: 768px;
+  }
+}
+/* 425-767 */
+@media screen and (max-width: 767px) {
+  .container {
+    max-width: 425px;
+  }
+}
+/* 375-424 */
+@media screen and (max-width: 424px) {
+  .container {
+    max-width: 375px;
+  }
+}
+/* 320< */
+@media screen and (max-width: 374px) {
+  .container {
+    max-width: 320px;
+  }
+}
+/*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Comment out the blockers if you want to unblock that code in slider.js  -->
+
+*/
+/* 1920> */
+/* 1440-1919 */
+/* 1024-1439 */
+/* 768-1023 */
+/* 425-767 */
+/* 375-424 */
+/* 320< */
+.about {
+  min-height: 581px;
+  position: relative;
+  display: flex;
+  margin-top: 90px;
+  z-index: 800;
+}
+
+.about-base {
+  width: 1140px;
+  justify-self: center;
+}
+.about-base__title {
+  font-size: 36px;
+  line-height: 124.5%;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+.about-base__title img {
+  display: block;
+  margin-top: 19px;
+}
+.about-base__p {
+  font-size: 18px;
+  line-height: 170%;
+  margin-top: 41px;
+}
+.about-base__image {
+  width: 550px;
+  height: 581px;
+}
+
+/* 1024-1439 */
+@media screen and (max-width: 1439px) {
+  .about-base {
+    width: 924px;
+  }
+  .about-base .col-6:last-child {
+    display: flex;
+    align-items: center;
+  }
+  .about-base__image {
+    width: 450px;
+    height: 450px;
+  }
+}
+/* 768-1023 */
+@media screen and (max-width: 1023px) {
+  .about-base {
+    max-width: 768px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-base__title {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .about-base__title img {
+    align-self: center;
+  }
+  .about-base .col-6 {
+    width: 668px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .about-base__p {
+    text-wrap: wrap;
+  }
+  .about-base__p:last-child {
+    margin-top: 0px;
+  }
+  .about-base__image {
+    margin-top: 35px;
+  }
+}
+/* 425-767 */
+@media screen and (max-width: 767px) {
+  .about-base {
+    max-width: 425px;
+  }
+  .about-base__image {
+    margin-top: 20px;
+    width: 350px;
+    height: auto;
+  }
+}
+/* 375-424 */
+@media screen and (max-width: 424px) {
+  .about-base {
+    max-width: 375px;
+  }
+  .about-base__title {
+    width: 375px !important;
+  }
+}
+/* 320< */
+@media screen and (max-width: 374px) {
+  .about-base {
+    max-width: 320px;
+  }
+  .about-base__title {
+    width: 320px !important;
+  }
+}/*# sourceMappingURL=about.css.map */
