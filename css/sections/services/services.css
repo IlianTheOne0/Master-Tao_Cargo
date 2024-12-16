@@ -318,11 +318,11 @@ header, section {
     height: 8px;
     text-indent: -9999px;
     border: 0;
-    background: url("/assets/icons/sliders/dot.svg") no-repeat center center;
+    background: url("https://iliantheone0.github.io/Master-Tao_Cargo/assets/icons/sliders/dot.svg") no-repeat center center;
     background-size: 8px 8px;
   }
   .services-base .dots ul .slick-active button {
-    background: url("/assets/icons/sliders/filled-dot.svg") no-repeat center center;
+    background: url("https://iliantheone0.github.io/Master-Tao_Cargo/assets/icons/sliders/filled-dot.svg") no-repeat center center;
   }
   .services-base .slider {
     margin-left: 800px;

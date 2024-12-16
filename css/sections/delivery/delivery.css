@@ -185,10 +185,10 @@ header, section {
   margin-right: 18px;
 }
 .delivery .item__condition .calendar {
-  background: url("/assets/icons/delivery/calendar.svg") no-repeat;
+  background: url("https://iliantheone0.github.io/Master-Tao_Cargo/assets/icons/delivery/calendar.svg") no-repeat;
 }
 .delivery .item__condition .weight {
-  background: url("/assets/icons/delivery/box.svg") no-repeat;
+  background: url("https://iliantheone0.github.io/Master-Tao_Cargo/assets/icons/delivery/box.svg") no-repeat;
 }
 .delivery .item__price {
   height: 56px;
@@ -312,11 +312,11 @@ header, section {
     height: 8px;
     text-indent: -9999px;
     border: 0;
-    background: url("/assets/icons/sliders/dot.svg") no-repeat center center;
+    background: url("https://iliantheone0.github.io/Master-Tao_Cargo/assets/icons/sliders/dot.svg") no-repeat center center;
     background-size: 8px 8px;
   }
   .delivery .dots ul .slick-active button {
-    background: url("/assets/icons/sliders/filled-dot.svg") no-repeat center center;
+    background: url("https://iliantheone0.github.io/Master-Tao_Cargo/assets/icons/sliders/filled-dot.svg") no-repeat center center;
   }
   .delivery .slider .slick-delivery-prev {
     left: 10%;

@@ -174,12 +174,12 @@ header, section {
   top: 45%;
 }
 .faq__accordion .accordion-item .accordion-header .accordion-button:not(.collapsed)::after {
-  content: url("/assets/icons/arrows/right-in.svg");
+  content: url("https://iliantheone0.github.io/Master-Tao_Cargo/assets/icons/arrows/right-in.svg");
   transition: transform 0.3s ease;
   transform: rotate(-90deg);
 }
 .faq__accordion .accordion-item .accordion-header .accordion-button.collapsed::after {
-  content: url("/assets/icons/arrows/right-out.svg");
+  content: url("https://iliantheone0.github.io/Master-Tao_Cargo/assets/icons/arrows/right-out.svg");
   transform: rotate(0deg) translateY(-50%);
   transition: transform 0.3s ease;
 }

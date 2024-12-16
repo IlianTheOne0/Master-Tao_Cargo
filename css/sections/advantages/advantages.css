@@ -164,11 +164,11 @@ header, section {
 }
 .advantages-base .slider .item .background-circle {
   top: 27%;
-  background: url("/assets/icons/advantages/circle.svg") no-repeat center center;
+  background: url("https://iliantheone0.github.io/Master-Tao_Cargo/assets/icons/advantages/circle.svg") no-repeat center center;
 }
 .advantages-base .slider .item .circle-border {
   top: 25%;
-  background: url("/assets/icons/advantages/circle border.svg") no-repeat center center;
+  background: url("https://iliantheone0.github.io/Master-Tao_Cargo/assets/icons/advantages/circle%20border.svg") no-repeat center center;
 }
 
 /* 1440-1919 */
@@ -262,11 +262,11 @@ header, section {
     height: 8px;
     text-indent: -9999px;
     border: 0;
-    background: url("/assets/icons/sliders/dot.svg") no-repeat center center;
+    background: url("https://iliantheone0.github.io/Master-Tao_Cargo/assets/icons/sliders/dot.svg") no-repeat center center;
     background-size: 8px 8px;
   }
   .advantages-base .dots ul .slick-active button {
-    background: url("/assets/icons/sliders/filled-dot.svg") no-repeat center center;
+    background: url("https://iliantheone0.github.io/Master-Tao_Cargo/assets/icons/sliders/filled-dot.svg") no-repeat center center;
   }
   .advantages-base .slider {
     width: 500px;
