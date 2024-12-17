@@ -94,32 +94,6 @@ header, section {
     max-width: 320px;
   }
 }
-/*
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- Comment out the blockers if you want to unblock that code in slider.js  -->
-
-*/
-/* 1920> */
-/* 1440-1919 */
-/* 1024-1439 */
-/* 768-1023 */
-/* 425-767 */
-/* 375-424 */
-/* 320< */
 .main-section {
   position: relative;
   margin-top: 14px; /*39.65px*/
@@ -157,6 +131,7 @@ header, section {
 .main-section .dots ul .slick-active button {
   background: url("https://iliantheone0.github.io/Master-Tao_Cargo/assets/icons/sliders/filled-dot.svg") no-repeat center center;
 }
+
 
 .slider {
   position: relative;
@@ -305,6 +280,9 @@ header, section {
 }
 /* 425-767 */
 @media screen and (max-width: 767px) {
+  .main-section {
+    margin-top: 100px;
+  }
   .item__background {
     max-width: 1820px;
     height: 580px;
